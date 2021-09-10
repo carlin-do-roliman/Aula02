@@ -74,7 +74,29 @@ const Home = () => {
                 </Image>
             </View>
             <LinksHeader></LinksHeader>
-
+            <View style={styles.bar}>
+                <View style={styles.button}>
+                    <Image source={
+                        require("../../assets/link-like.png")
+                        }>
+                    </Image>
+                    <Text>  Like</Text>
+                </View>
+                <View style={styles.button}>
+                    <Image source={
+                        require("../../assets/link-coment.png")
+                        }>
+                    </Image>
+                    <Text>  Comment</Text>
+                </View>
+                <View style={styles.button}>
+                    <Image source={
+                        require("../../assets/link-share.png")
+                        }>
+                    </Image>
+                    <Text>  Share</Text>
+                </View>
+            </View>
 
         </View>
     );
@@ -109,6 +131,23 @@ const styles = StyleSheet.create({
         flex:1,
         paddingRight:10,
         color:"#F5FFFF",
+    },
+    bar:{
+        minHeight:70,
+        paddingVertical:30,
+        flexDirection:"row",
+        justifyContent:"space-between",
+        alignItems:"center",
+        paddingHorizontal:30,
+        paddingTop:20,
+    },
+    button:{
+        justifyContent:"space-between",
+        alignItems:"center",
+        flexDirection: "row",
+    },
+    Text:{
+        color:"#575757",
     },
 });
 
